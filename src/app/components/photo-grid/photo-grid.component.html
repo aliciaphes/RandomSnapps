@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="row">
+    <div class="column" *ngFor="let photo of photosToDisplay">
+      <div class="grid-card">
+        <a target="_blank" href="{{photo.links.download}}">
+          <img src="{{photo.urls.thumb}}" alt="{{photo.description}}" onError="this.src='../../assets/fallback.jpg'"class="card-img-top thumbnail">
+        </a>
+        <div class="card-body">
+          <h5 class="card-title">Photo by {{photo.user.name}}</h5>
+          <p *ngIf="photo.description"  class="card-text">"{{photo.description}}"</p>
+          <p *ngIf="!photo.description" class="card-text">This photo has no description</p>
+        </div>
+        <a target="_blank" href="{{photo.user.links.html}}" class="btn btn-primary">See {{photo.user.username}}'s profile</a>
+      </div>
+    </div>
+  </div>
+</div>

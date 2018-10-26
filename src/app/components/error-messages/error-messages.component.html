@@ -1,0 +1,7 @@
+<div *ngIf="errorMessages.length > 0" class="mx-5">
+  <p>The following errors occurred:</p>
+  <div class="alert alert-danger margin-on-top center" role="alert"
+      *ngFor="let errorMsg of errorMessages">
+    <p>{{errorMsg}}</p>
+  </div>
+</div>

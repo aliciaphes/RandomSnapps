@@ -1,0 +1,44 @@
+
+.thumbnail{
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: .25rem;
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  border-radius: .75rem;
+  width:200px;
+  height:200px;
+}
+
+
+.column{
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  display: flex;
+}
+
+.center{
+  align-items: center;
+}
+
+
+
+.btn{
+  margin-bottom: 20px;
+}
+
+
+.grid-card{
+  border: 1px solid blue;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  align-items: center;
+  border: 1px solid rgba(0,0,0,.125);
+  border-radius: .25rem;
+}

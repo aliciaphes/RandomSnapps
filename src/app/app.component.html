@@ -1,0 +1,19 @@
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to RandomSnapps!</h1>
+  <p class="lead">This application displays 25 random photos using the Unsplash API</p>
+  <hr class="my-4">
+  <p>You can click on the image to download it and/or on the button to see more about the author.</p>
+  <p>You can also search for photos by keyword</p>
+</div>
+
+<div class="input-group col search-bar">
+  <input type="text" class="form-control" placeholder="Keyword" [(ngModel)]="keyword">
+  <div class="input-group-append">
+    <button class="btn btn-secondary" type="button" (click)="searchPhotosByKeyword()">Search</button>
+  </div>
+</div>
+
+
+<app-error-messages [errorMessages] = "errorMessages"></app-error-messages>
+
+<app-photo-grid [photosToDisplay] = "photosToDisplay"></app-photo-grid>
