@@ -3,6 +3,9 @@
 Display 25 random photos using the Unsplash API and search photos by keyword.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.2.3. and uses Bootstrap.
 
+# Screenshot:
+![RandomSnapps](docs/images/screenshot.jpg)
+
 # Instructions
 In order for the app to work, you will need to create a JSON file called keys.json (this file could also be in the server but for simplicity we read it locally). Store this file under the 'assets' folder. The content should be like this:<br/>
 
